@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NglayapPedia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <body>
+    <!-- nav -->
+    <header>
+      <a href="" class="logo">NglayapPedia</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#">Informasi</a></li>
+        <li><a href="#">Destinasi</a></li>
+        <li><a href="#">Manfaat</a></li>
+      </ul>
+    </header>
+
+    <!-- hero -->
+    <section class="beranda">
+      <div class="bgimage"></div>
+      <div class="home-text" id="beranda">
+        <h1>
+          BINGUNG MAU <br />
+          BACKPACKERAN?
+        </h1>
+        <div>
+          <p class="desc">
+            Website ini cocok buat lo yang demen Backpackeran, terutama yang
+            memiliki budget pas-pasan. simak selengkapnya dalam NglayapPedia
+          </p>
+          <br />
+          <div style="margin-top: 2%">
+            <a class="tombol1" href="#">Lebih Lanjut</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section2 -->
+    <section class="sec2">
+      <h1>Apa itu NglayapPedia?</h1>
+      <div class="sect2">
+        <p>
+          NglayapPedia adalah platform yang mengajak para backpacker dengan
+          semangat petualangan untuk menjelajahi dunia dengan budget terbatas.
+          Dengan informasi destinasinya yang ramah kantong, tips hemat, dan
+          komunitas backpacker yang aktif. <br />
+          <br />
+          NglayapPedia menjadi sumber inspirasi dan panduan lengkap bagi mereka
+          yang suka "nglayap" ke tempat-tempat baru. Dari itinerari siap pakai
+          hingga cerita perjalanan seru, NglayapPedia hadir untuk memudahkan
+          backpacker dalam merencanakan petualangan tak terlupakan. Selamat
+          nglayap bro!
+        </p>
+        <img src="assets/pic2.png" alt="" />
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- 3 -->
+    <section class="tiga">
+      <h1>Destinasi Pilihan</h1>
+
+      <div class="tigacontainer">
+        <div class="idn">
+          <h1>
+            Dalam <br />
+            Negeri
+          </h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="ln">
+          <h1>Luar <br />Negeri</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/bg1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/pic2.png" alt="" />
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
