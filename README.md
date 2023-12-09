@@ -1,4 +1,5 @@
 <h1>Preview NglayapPedia</h1>
 
 <p>gacor kang</p>
-![previewWeb](https://github.com/dipndipp/nglayapPedia/assets/137590206/d58a93e3-7800-4415-b6e4-d0ae7ceb6c1a)
+
+![previewWeb](https://github.com/dipndipp/nglayapPedia/assets/137590206/7f1f589a-873b-4613-b9b1-2a4645687bcd)
