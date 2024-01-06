@@ -6,22 +6,28 @@
     <title>NglayapPedia</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/
+f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <body>
     <!-- nav -->
-    <header>
+    <header data-aos="fade-down" data-aos-delay="100">
       <a href="" class="logo">NglayapPedia</a>
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
         <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#">Informasi</a></li>
-        <li><a href="#">Destinasi</a></li>
+
+        <li><a href="#destinasi">Destinasi</a></li>
         <li><a href="#">Manfaat</a></li>
+        <li><a href="#">Tips</a></li>
       </ul>
     </header>
 
@@ -29,105 +35,151 @@
     <section class="beranda">
       <div class="bgimage"></div>
       <div class="home-text" id="beranda">
-        <h1>
+        <h1 data-aos-delay="300" data-aos="fade-right">
           BINGUNG MAU <br />
           BACKPACKERAN?
         </h1>
         <div>
-          <p class="desc">
+          <p class="desc" data-aos-delay="500" data-aos="fade-right">
             Website ini cocok buat lo yang demen Backpackeran, terutama yang
             memiliki budget pas-pasan. simak selengkapnya dalam NglayapPedia
           </p>
           <br />
-          <div style="margin-top: 2%">
-            <a class="tombol1" href="#">Lebih Lanjut</a>
+          <div
+            style="margin-top: 2%"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <a class="tombol1" href="#sec2">Lebih Lanjut</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- section2 -->
-    <section class="sec2">
-      <h1>Apa itu NglayapPedia?</h1>
+    <section class="sec2" id="sec2">
+      <h1 data-aos="fade-right" data-aos-delay="100">Apa itu NglayapPedia?</h1>
       <div class="sect2">
-        <p>
+        <p data-aos="fade-right" data-aos-delay="200">
           NglayapPedia adalah platform yang mengajak para backpacker dengan
           semangat petualangan untuk menjelajahi dunia dengan budget terbatas.
-          Dengan informasi destinasinya yang ramah kantong, tips hemat, dan
-          komunitas backpacker yang aktif. <br />
+          Dengan informasi destinasinya yang ramah kantong dan hemat. <br />
           <br />
           NglayapPedia menjadi sumber inspirasi dan panduan lengkap bagi mereka
           yang suka "nglayap" ke tempat-tempat baru. Dari itinerari siap pakai
           hingga cerita perjalanan seru, NglayapPedia hadir untuk memudahkan
-          backpacker dalam merencanakan petualangan tak terlupakan. Selamat
-          nglayap bro!
+          backpacker dalam merencanakan petualangan tak terlupakan.
         </p>
-        <img src="assets/pic2.png" alt="" />
+        <img src="assets/pic2.png" alt="" / data-aos="fade-left"
+        data-aos-delay="300">
       </div>
     </section>
 
     <hr />
 
     <!-- 3 -->
-    <section class="tiga">
-      <h1>Destinasi Pilihan</h1>
-
+    <section class="tiga" id="destinasi">
       <div class="tigacontainer">
         <div class="idn">
-          <h1>
-            Dalam <br />
-            Negeri
-          </h1>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+          <div class="textidn">
+            <h1 data-aos="fade-right" data-aos-delay="100">
+              Destinasi <br />Pilihan
+            </h1>
           </div>
-        </div>
-
-        <div class="ln">
-          <h1>Luar <br />Negeri</h1>
-          <div class="swiper mySwiper">
+          <div
+            class="swiper mySwiper"
+            data-aos="fade-down"
+            data-aos-delay="500"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="assets/bg1.png" alt="" />
+                <a href="destfolder/bali.html"
+                  ><img src="assets/Bali2.jpg" alt=""
+                /></a>
               </div>
               <div class="swiper-slide">
-                <img src="assets/pic2.png" alt="" />
+                <img src="assets/Bali.jpg" alt="" />
               </div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/Bali.jpg" alt="" />
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </section>
+
+    <hr />
+
+    <section class="empat" data-aos-duration="3000">
+      <h1 class="h14" data-aos="fade-down" data-aos-delay="200">
+        Manfaat Backpackeran
+      </h1>
+      <div class="list4" data-aos="fade-up" data-aos-delay="500">
+        <div class="isilist">
+          <img src="assets/hemat.png" alt="" />
+          <h1>Ramah di kantong</h1>
+        </div>
+        <div class="isilist">
+          <img src="assets/world.png" alt="" />
+          <h1>Mengenal dunia luar</h1>
+        </div>
+        <div class="isilist">
+          <img src="assets/connection.png" alt="" />
+          <h1>Menambah Koneksi</h1>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="lima">
+      <h1>Tips and Trick</h1>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col1" data-aos="fade-right">
+            <ul style="line-height: 70px">
+              <li style="font-weight: 600" class="footer-li">NglayapPedia</li>
+            </ul>
+          </div>
+          <div class="footer-col2" data-aos="fade-right" data-aos-delay="300">
+            <ul>
+              <li style="font-weight: 600; font-size: 15px">
+                Developed by Muhammad Ihsan Nadhif
+              </li>
+              <li>
+                <a href="https://www.instagram.com/dipnadipp" target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>Stay Tune!</li>
+            </ul>
+          </div>
+          <div class="footer-col3" data-aos="fade-right" data-aos-delay="500">
+            <ul style="text-align: right">
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="">Informasi</a></li>
+              <li><a href="">Destinasi</a></li>
+              <li><a href="">Tips</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
+    AOS.init();
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 30,
