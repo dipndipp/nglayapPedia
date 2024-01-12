@@ -11,7 +11,14 @@
 f90068558c.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -21,19 +28,22 @@ f90068558c.js"
     <!-- nav -->
     <header data-aos="fade-down" data-aos-delay="100">
       <a href="" class="logo">NglayapPedia</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <input type="checkbox" name="" id="check" />
+      <label for="" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
       <ul class="navbar">
         <li><a href="#beranda">Beranda</a></li>
 
+        <li><a href="#sec2">Informasi</a></li>
         <li><a href="#destinasi">Destinasi</a></li>
-        <li><a href="#">Manfaat</a></li>
-        <li><a href="#">Tips</a></li>
+        <li><a href="#empat">Manfaat</a></li>
       </ul>
     </header>
 
     <!-- hero -->
     <section class="beranda">
-      <div class="bgimage"></div>
       <div class="home-text" id="beranda">
         <h1 data-aos-delay="300" data-aos="fade-right">
           BINGUNG MAU <br />
@@ -94,20 +104,25 @@ f90068558c.js"
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="destfolder/bali.html"
-                  ><img src="assets/Bali2.jpg" alt=""
+                  ><img src="assets/Bali.png" alt=""
                 /></a>
               </div>
               <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
+                <a href="destfolder/nusa.html">
+                  <img src="assets/NusaTenggara.png" alt=""
+                /></a>
               </div>
               <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
+                <a href="destfolder/malang.html"
+                  ><img src="assets/Malang.png" alt=""
+                /></a>
               </div>
               <div class="swiper-slide">
-                <img src="assets/Bali.jpg" alt="" />
+                <a href="destfolder/mentawai.html">
+                  <img src="assets/Mentawai.png" alt=""
+                /></a>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -115,7 +130,7 @@ f90068558c.js"
 
     <hr />
 
-    <section class="empat" data-aos-duration="3000">
+    <section class="empat" data-aos-duration="3000" id="empat">
       <h1 class="h14" data-aos="fade-down" data-aos-delay="200">
         Manfaat Backpackeran
       </h1>
@@ -135,11 +150,6 @@ f90068558c.js"
       </div>
     </section>
 
-    <hr />
-    <section class="lima">
-      <h1>Tips and Trick</h1>
-    </section>
-
     <footer class="footer">
       <div class="footer-container">
         <div class="row">
@@ -148,6 +158,7 @@ f90068558c.js"
               <li style="font-weight: 600" class="footer-li">NglayapPedia</li>
             </ul>
           </div>
+
           <div class="footer-col2" data-aos="fade-right" data-aos-delay="300">
             <ul>
               <li style="font-weight: 600; font-size: 15px">
@@ -162,11 +173,11 @@ f90068558c.js"
             </ul>
           </div>
           <div class="footer-col3" data-aos="fade-right" data-aos-delay="500">
-            <ul style="text-align: right">
+            <ul>
               <li><a href="#beranda">Beranda</a></li>
-              <li><a href="">Informasi</a></li>
-              <li><a href="">Destinasi</a></li>
-              <li><a href="">Tips</a></li>
+              <li><a href="#sec2">Informasi</a></li>
+              <li><a href="#destinasi">Destinasi</a></li>
+              <li><a href="#empat">Manfaat</a></li>
             </ul>
           </div>
         </div>
@@ -180,13 +191,25 @@ f90068558c.js"
   <!-- Initialize Swiper -->
   <script>
     AOS.init();
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+
+    if (window.innerWidth < 600) {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    } else {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
   </script>
 </html>

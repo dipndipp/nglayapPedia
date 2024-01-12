@@ -9,29 +9,26 @@
 f90068558c.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header data-aos="fade-right" data-aos-delay="200">
+    <header data-aos="fade-right">
       <a href="/index.html" class="logo">NglayapPedia</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <ul class="navbar">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#infor">Informasi</a></li>
-        <li><a href="#destinasi">Destinasi</a></li>
-        <li><a href="#budaya">Tips</a></li>
-      </ul>
     </header>
     <section id="direct">
-      <div class="direct">
+      <div class="direct" data-aos="fade-right">
         <h4>
-          <a href="">Home</a> / <a href="">Destinasi</a> / <a href="">Bali</a>
+          <a href="/index.html">Home</a> / <a href="">Destinasi</a> /
+          <a href="">Bali</a>
         </h4>
       </div>
       <div class="topcont">
-        <h1>Bali</h1>
+        <h1 data-aos-delay="100" data-aos="fade-right">Bali</h1>
         <div class="incont">
-          <img src="/assets/balii.jpg" alt="" />
-          <div class="fact">
+          <img src="/assets/balii.jpg" alt="" / data-aos-delay="300"
+          data-aos="fade-right">
+          <div class="fact" data-aos-delay="500" data-aos="fade-left">
             <div class="bul">
               <div class="num">
                 <div class="circle"><h1>1</h1></div>
@@ -47,13 +44,13 @@ f90068558c.js"
             <div class="bul">
               <div class="num">
                 <div class="circle"><h1>3</h1></div>
-                <h2>Dijuluki Pulau Dewata</h2>
+                <h2>Pulau seribu Pura</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="info">
+      <div class="info" data-aos="fade-right">
         <p>
           Bali, sebuah pulau tropis yang terletak di Indonesia, dikenal sebagai
           surga wisata yang memikat dengan keindahan alamnya yang menakjubkan
@@ -64,25 +61,25 @@ f90068558c.js"
         </p>
       </div>
       <div class="destination">
-        <h1>Destinasi di Bali</h1>
-        <div class="card">
+        <h1 data-aos-delay="100" data-aos="fade-right">Destinasi di Bali</h1>
+        <div class="card" data-aos-delay="500" data-aos="fade-up">
           <div class="card1" id="open">
             <img src="/assets/pura.jpg" alt="" />
-            <h1>Destinasi A</h1>
+            <h1>Pura Ulun Danu</h1>
           </div>
-          <div class="card1">
+          <div class="card1" id="open2">
             <img src="/assets/tanahlot.jpg" alt="" />
-            <h1>Destinasi A</h1>
+            <h1>Tanah Lot</h1>
           </div>
-          <div class="card1">
-            <img src="" alt="" />
-            <h1>Destinasi A</h1>
+          <div class="card1" id="open3">
+            <img src="/assets/kelingking.jpg" alt="" />
+            <h1>Pantai kelingking</h1>
           </div>
         </div>
       </div>
       <div class="transport">
         <h1 class="brown">Panduan Perjalanan</h1>
-        <div class="satu">
+        <div class="satu" data-aos-delay="300" data-aos="fade-right">
           <div class="top">
             <div class="circle"><h2>1</h2></div>
             <h1>Transportasi</h1>
@@ -97,7 +94,7 @@ f90068558c.js"
             ada promosi atau penawaran khusus.
           </p>
         </div>
-        <div class="satu">
+        <div class="satu" data-aos-delay="300" data-aos="fade-right">
           <div class="top">
             <div class="circle"><h2>2</h2></div>
             <h1>Akomodasi</h1>
@@ -113,7 +110,7 @@ f90068558c.js"
             yang ingin pengalaman menginap yang lebih eksklusif di pulau ini.
           </p>
         </div>
-        <div class="satu">
+        <div class="satu" data-aos-delay="300" data-aos="fade-right">
           <div class="top">
             <div class="circle"><h2>3</h2></div>
             <h1>Konsumsi</h1>
@@ -148,6 +145,29 @@ f90068558c.js"
             <br />
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.2772426744395!2d115.16424847501018!3d-8.275180691759129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1896c9fac0857%3A0x18246568e4db1b53!2sUlun%20Danu%20Beratan%20Temple!5e0!3m2!1sen!2sid!4v1704511572689!5m2!1sen!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <br />
+            <button class="but" id="close">Close</button>
+          </div>
+        </div>
+        <div class="modal-container2" id="modal-container2">
+          <div class="modal2">
+            <h1>Ulun Danu Temple, Bali</h1>
+            <br />
+            <p>
+              Tanah Lot di Bali, ikon pariwisata, menawarkan pemandangan
+              matahari terbenam yang spektakuler dari atas batu karang. Harga
+              tiket masuk berkisar antara IDR 20.000 hingga IDR 80.000,
+              tergantung pada status pengunjung. Pastikan memeriksa tarif yang
+              berlaku sebelum mengunjungi.
+            </p>
+            <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.737314339787!2d115.08424922501402!3d-8.62119849142475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd237824f71deab%3A0xcaabe270f7e34d69!2sTanah%20Lot!5e0!3m2!1sen!2sid!4v1705078809281!5m2!1sen!2sid"
               width="400"
               height="300"
               style="border: 0"
@@ -156,7 +176,32 @@ f90068558c.js"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <br />
-            <button class="but" id="close">Close</button>
+            <button class="but" id="close2">Close</button>
+          </div>
+        </div>
+        <div class="modal-container3" id="modal-container3">
+          <div class="modal3">
+            <h1>Ulun Danu Temple, Bali</h1>
+            <br />
+            <p>
+              Pantai Kelingking di Nusa Penida, Bali, terkenal dengan tebing
+              karang mirip T-Rex. Pemandangan spektakuler dan pasir putih dapat
+              dinikmati setelah menuruni tebing curam. Harga tiket masuk
+              berkisar IDR 5.000-10.000, sesuai dengan aturan yang berlaku. Cek
+              informasi terkini sebelum kunjungan.
+            </p>
+            <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.378823490921!2d115.47004687456976!3d-8.750381189311513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd26f1616cd2cc7%3A0xee84b7df0afbff19!2sKelingking%20Beach%20Nusa%20Penida!5e0!3m2!1sen!2sid!4v1705078865358!5m2!1sen!2sid"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <br />
+            <button class="but" id="close3">Close</button>
           </div>
         </div>
       </div>
@@ -184,7 +229,7 @@ f90068558c.js"
             </ul>
           </div>
           <div class="footer-col3" data-aos="fade-right" data-aos-delay="500">
-            <ul style="text-align: right">
+            <ul>
               <li><a href="#beranda">Beranda</a></li>
               <li><a href="">Informasi</a></li>
               <li><a href="">Destinasi</a></li>
@@ -196,4 +241,7 @@ f90068558c.js"
     </footer>
   </body>
   <script src="/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

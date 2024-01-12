@@ -20,10 +20,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+
   padding: 30px;
+  position: fixed;
   transition: ease 0.4s;
   font-weight: 600;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  z-index: -2;
 }
 header ul {
   padding-right: 12%;
@@ -35,6 +48,7 @@ header ul {
 }
 .navbar {
   display: flex;
+  flex-direction: row;
 }
 .navbar a {
   color: white;
@@ -47,13 +61,21 @@ header ul {
   background: transparent;
   color: #7c7777;
 }
-#menu-icon {
-  color: white;
-  font-size: 35px;
-  z-index: 10001;
+#checkbox {
+  width: 20px;
+  height: 20px;
   cursor: pointer;
-  display: none;
+  vertical-align: bottom;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.08);
 }
+#check {
+  display: none;
+  position: absolute;
+  margin-left: 325px;
+  border-width: none;
+}
+
 section {
   padding: 80px 10%;
 }
@@ -76,6 +98,7 @@ section {
   font-weight: 600;
   line-height: 70px;
   margin-bottom: 3%;
+  margin-left: 8px;
 }
 .home-text .desc {
   margin-right: 65%;
@@ -84,6 +107,7 @@ section {
   border-radius: 10px;
 }
 .tombol1 {
+  margin-left: 8px;
   background-color: transparent;
   border-radius: 5px;
   border: #fff solid;
@@ -157,6 +181,8 @@ a {
   border-radius: 0px;
   background-color: transparent;
 }
+/* end swiper
+ */
 .tigacontainer {
   margin-top: 10%;
 }
@@ -261,4 +287,115 @@ footer {
 }
 .footer-li {
   font-size: 30px;
+  right: 0;
+}
+.icons {
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper {
+    width: 200%;
+    height: 200%;
+    z-index: 0;
+  }
+
+  .idn h1 {
+    padding-top: 0;
+    padding-bottom: 10%;
+  }
+  .idn {
+    margin-top: -20%;
+    flex-direction: column;
+  }
+  .list4 {
+    flex-direction: column;
+  }
+  .sect2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sect2 p {
+    max-width: 100%;
+  }
+  .home-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 7%;
+  }
+  .home-text .desc {
+    width: 100%;
+  }
+  .home-text {
+    margin-top: 40%;
+  }
+  .icons {
+    display: block;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+  header {
+    max-width: 50%;
+    left: 0;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.3s ease;
+    overflow: hidden;
+    background-color: transparent;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 0;
+    backdrop-filter: blur(10px);
+  }
+  .navbar a {
+    display: block;
+    margin: 2%;
+    text-align: center;
+  }
+  .logo {
+    font-size: 27px;
+    color: white;
+    padding-left: 2%;
+  }
+  #check {
+    display: block;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  #check:checked ~ .navbar {
+    height: 17.7rem;
+  }
+  .footer-col2 {
+    width: 100%;
+    padding: 20px 70px;
+    text-align: center;
+  }
+
+  .footer-col3 {
+    display: flex;
+    width: 64%;
+    padding: 10px 0;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .footer-col1 {
+    text-align: center;
+    padding-left: 50px;
+  }
 }
