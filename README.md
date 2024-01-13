@@ -2,4 +2,5 @@
 
 <p>gacor kang</p>
 
-![previewWeb](https://github.com/dipndipp/nglayapPedia/assets/137590206/7f1f589a-873b-4613-b9b1-2a4645687bcd)
+
+![displaynglayappedia](https://github.com/dipndipp/nglayapPedia/assets/137590206/6246182f-acf4-418f-9c5b-f768ea86b196)
